@@ -41,6 +41,7 @@
     <nav>
       <a href="#privacy" class="active" onclick="show('privacy')">Politique de confidentialite</a>
       <a href="#terms" onclick="show('terms')">Conditions d'utilisation</a>
+      <a href="#delete-account" onclick="document.getElementById('delete-account').scrollIntoView({behavior:'smooth'})" style="background:#EF4444;border-color:#EF4444;color:#fff">Supprimer mon compte</a>
     </nav>
 
     <!-- ═══ PRIVACY ═══ -->
@@ -208,6 +209,27 @@
     <a class="cta" href="https://play.google.com/store/apps/details?id=com.dishrank.app">
       Telecharger DishRank
     </a>
+
+    <!-- ═══ DELETE ACCOUNT ═══ -->
+    <div id="delete-account" style="margin-top:48px;padding:32px 24px;background:var(--surface);border-radius:16px;border:1px solid var(--border)">
+      <h2 style="margin-top:0;color:var(--text)">Suppression de compte</h2>
+      <p>Vous pouvez demander la suppression de votre compte et de toutes les donnees associees de deux manieres :</p>
+      <h3 style="font-size:15px;margin:16px 0 8px;color:var(--text)">1. Depuis l'application</h3>
+      <p>Ouvrez DishRank > <strong>Profil</strong> > <strong>Parametres</strong> (icone engrenage) > <strong>Donnees personnelles</strong> > <strong>Supprimer mon compte</strong></p>
+      <h3 style="font-size:15px;margin:16px 0 8px;color:var(--text)">2. Par email</h3>
+      <p>Envoyez un email a <a href="mailto:dpo@dishrank.app" style="color:var(--accent)">dpo@dishrank.app</a> avec l'objet <strong>"Suppression de compte"</strong> depuis l'adresse email associee a votre compte.</p>
+      <h3 style="font-size:15px;margin:16px 0 8px;color:var(--text)">Donnees supprimees</h3>
+      <p>La suppression de votre compte entraine l'effacement definitif de :</p>
+      <ul>
+        <li>Votre profil (nom d'utilisateur, photo, bio)</li>
+        <li>Tous vos avis, notes et photos de plats</li>
+        <li>Vos commentaires et likes</li>
+        <li>Vos favoris et signets</li>
+        <li>Vos parametres et preferences</li>
+        <li>Votre historique de notifications</li>
+      </ul>
+      <p>Un delai de <strong>30 jours</strong> est applique avant la suppression definitive, pendant lequel vous pouvez annuler votre demande en vous reconnectant.</p>
+    </div>
 
     <footer>
       <p>&copy; 2026 DishRank SAS — Paris, France</p>
