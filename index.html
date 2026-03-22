@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishRank — Mentions Legales</title>
+  <style>
+    :root { --bg: #1A1832; --surface: #242244; --text: #EEEEF0; --text2: #B0B0C0; --accent: #FF6B35; --border: #353355; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+    .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    .logo { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+    .logo img { width: 40px; height: 40px; }
+    .logo h1 { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; }
+    .tagline { color: var(--text2); font-size: 14px; margin-bottom: 32px; }
+    nav { display: flex; gap: 12px; margin-bottom: 40px; flex-wrap: wrap; }
+    nav a { display: inline-block; padding: 10px 20px; border-radius: 12px; background: var(--surface); color: var(--text); text-decoration: none; font-weight: 600; font-size: 14px; border: 1px solid var(--border); transition: all 0.2s; }
+    nav a:hover, nav a.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .page { display: none; }
+    .page.active { display: block; }
+    .updated { color: var(--text2); font-size: 13px; margin-bottom: 24px; font-style: italic; }
+    h2 { font-size: 18px; font-weight: 700; margin: 28px 0 10px; color: var(--text); }
+    p, li { color: var(--text2); font-size: 15px; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    .cta { display: inline-flex; align-items: center; gap: 10px; margin-top: 32px; padding: 14px 28px; background: var(--accent); color: #fff; border-radius: 14px; text-decoration: none; font-weight: 700; font-size: 16px; transition: opacity 0.2s; }
+    .cta:hover { opacity: 0.9; }
+    footer { text-align: center; color: var(--text2); font-size: 12px; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--border); }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #F8F7FC; --surface: #fff; --text: #1A1832; --text2: #666680; --border: #E0E0E8; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://yztbhdvrvgozhyaujtjz.supabase.co/storage/v1/object/public/assets/logo.png" alt="DishRank">
+      <h1>DishRank</h1>
+    </div>
+    <p class="tagline">Note les plats, pas les restos.</p>
+
+    <nav>
+      <a href="#privacy" class="active" onclick="show('privacy')">Politique de confidentialite</a>
+      <a href="#terms" onclick="show('terms')">Conditions d'utilisation</a>
+    </nav>
+
+    <!-- ═══ PRIVACY ═══ -->
+    <div id="privacy" class="page active">
+      <p class="updated">Derniere mise a jour : 19 mars 2026</p>
+
+      <h2>1. Responsable du traitement</h2>
+      <p>DishRank SAS, societe par actions simplifiee, est responsable du traitement de vos donnees personnelles dans le cadre de l'utilisation de l'application DishRank.</p>
+      <p>Contact DPO : <a href="mailto:dpo@dishrank.app" style="color:var(--accent)">dpo@dishrank.app</a></p>
+
+      <h2>2. Donnees collectees</h2>
+      <p>Nous collectons les donnees suivantes :</p>
+      <ul>
+        <li><strong>Donnees d'inscription :</strong> adresse email, nom d'utilisateur, nom d'affichage, mot de passe (chiffre), photo de profil.</li>
+        <li><strong>Donnees de contenu :</strong> avis publies, notes, photos de plats, noms de restaurants, commentaires.</li>
+        <li><strong>Donnees de localisation :</strong> position geographique (uniquement avec votre consentement) pour afficher les plats a proximite.</li>
+        <li><strong>Donnees techniques :</strong> type d'appareil, systeme d'exploitation, identifiant unique, jeton de notification push.</li>
+        <li><strong>Donnees d'utilisation :</strong> interactions avec l'application, preferences de langue et de theme, parametres de notification (uniquement si vous avez active les statistiques d'utilisation).</li>
+      </ul>
+
+      <h2>3. Finalites du traitement</h2>
+      <ul>
+        <li>Creation et gestion de votre compte utilisateur</li>
+        <li>Publication et affichage de vos avis et photos</li>
+        <li>Recommandation de plats a proximite basee sur votre localisation</li>
+        <li>Envoi de notifications (likes, commentaires, plats populaires)</li>
+        <li>Amelioration de l'application et analyse statistique (anonymisee)</li>
+        <li>Communications marketing (uniquement avec votre consentement explicite)</li>
+        <li>Respect de nos obligations legales</li>
+      </ul>
+
+      <h2>4. Bases legales</h2>
+      <ul>
+        <li><strong>Execution du contrat :</strong> fonctionnement du service (compte, avis, notifications)</li>
+        <li><strong>Consentement :</strong> geolocalisation, notifications push, communications marketing, statistiques d'utilisation</li>
+        <li><strong>Interet legitime :</strong> securite du service, prevention des abus</li>
+        <li><strong>Obligation legale :</strong> conservation des donnees requise par la loi</li>
+      </ul>
+
+      <h2>5. Duree de conservation</h2>
+      <ul>
+        <li>Donnees de compte : conservees pendant toute la duree de votre inscription, puis supprimees dans les 30 jours suivant la suppression du compte</li>
+        <li>Donnees de contenu : conservees tant que le contenu est publie, supprimees avec le compte</li>
+        <li>Donnees de localisation : non stockees de maniere permanente, utilisees uniquement en temps reel</li>
+        <li>Jetons de notification : supprimes a la deconnexion ou la suppression du compte</li>
+        <li>Logs techniques : conserves 12 mois maximum</li>
+      </ul>
+
+      <h2>6. Partage des donnees</h2>
+      <p>Vos donnees sont partagees avec :</p>
+      <ul>
+        <li><strong>Supabase</strong> (hebergement et base de donnees) — serveurs en Europe (AWS eu-west)</li>
+        <li><strong>Expo / Google</strong> (notifications push) — uniquement le jeton de notification</li>
+        <li><strong>Google Places API</strong> (recherche de restaurants) — uniquement les termes de recherche</li>
+      </ul>
+      <p><strong>Nous ne vendons jamais vos donnees personnelles a des tiers.</strong></p>
+
+      <h2>7. Transferts internationaux</h2>
+      <p>Vos donnees sont principalement stockees en Europe. Certains sous-traitants (Google pour les notifications) peuvent traiter des donnees aux Etats-Unis, sous couvert de clauses contractuelles types approuvees par la Commission europeenne.</p>
+
+      <h2>8. Vos droits (RGPD)</h2>
+      <p>Conformement au RGPD, vous disposez des droits suivants :</p>
+      <ul>
+        <li><strong>Droit d'acces :</strong> obtenir une copie de vos donnees personnelles</li>
+        <li><strong>Droit de rectification :</strong> corriger des donnees inexactes</li>
+        <li><strong>Droit a l'effacement :</strong> supprimer votre compte et toutes vos donnees</li>
+        <li><strong>Droit a la portabilite :</strong> exporter vos donnees dans un format structure (JSON)</li>
+        <li><strong>Droit d'opposition :</strong> vous opposer au traitement marketing</li>
+        <li><strong>Droit a la limitation :</strong> restreindre le traitement de vos donnees</li>
+        <li><strong>Retrait du consentement :</strong> retirer votre consentement a tout moment</li>
+      </ul>
+      <p>Tous ces droits sont exercables directement depuis les parametres de l'application (section Donnees personnelles) ou en contactant <a href="mailto:dpo@dishrank.app" style="color:var(--accent)">dpo@dishrank.app</a>.</p>
+
+      <h2>9. Exercice de vos droits dans l'application</h2>
+      <ul>
+        <li><strong>Exporter mes donnees :</strong> telechargez l'integralite de vos donnees au format JSON depuis Parametres > Donnees personnelles</li>
+        <li><strong>Supprimer mon compte :</strong> demandez la suppression depuis Parametres > Donnees personnelles. Un delai de 30 jours est applique pour vous permettre d'annuler</li>
+        <li><strong>Gerer les consentements :</strong> activez/desactivez le marketing et les statistiques depuis Parametres > Donnees personnelles</li>
+        <li><strong>Gerer la visibilite :</strong> masquez votre profil depuis Parametres > Confidentialite</li>
+      </ul>
+
+      <h2>10. Securite</h2>
+      <ul>
+        <li>Chiffrement des mots de passe (bcrypt)</li>
+        <li>Communication chiffree (HTTPS/TLS)</li>
+        <li>Row Level Security (RLS) sur toutes les tables</li>
+        <li>Tokens d'authentification JWT avec renouvellement automatique</li>
+        <li>Acces restreint aux donnees en production</li>
+      </ul>
+
+      <h2>11. Cookies et traceurs</h2>
+      <p>L'application mobile DishRank n'utilise pas de cookies. Sur la version web, seuls des cookies techniques strictement necessaires au fonctionnement du service (session d'authentification) sont utilises.</p>
+
+      <h2>12. Mineurs</h2>
+      <p>L'application est destinee aux personnes agees de 16 ans et plus. Nous ne collectons pas sciemment de donnees de mineurs de moins de 16 ans.</p>
+
+      <h2>13. Modifications</h2>
+      <p>Nous nous reservons le droit de modifier cette politique. En cas de modification substantielle, vous serez informe(e) par notification dans l'application.</p>
+
+      <h2>14. Reclamation</h2>
+      <p>Si vous estimez que le traitement de vos donnees n'est pas conforme, vous pouvez introduire une reclamation aupres de la CNIL : 3 Place de Fontenoy, TSA 80715, 75334 Paris Cedex 07 — <a href="https://www.cnil.fr" style="color:var(--accent)">www.cnil.fr</a></p>
+
+      <h2>15. Contact</h2>
+      <p>Email : <a href="mailto:dpo@dishrank.app" style="color:var(--accent)">dpo@dishrank.app</a><br>DishRank SAS — Paris, France</p>
+    </div>
+
+    <!-- ═══ TERMS ═══ -->
+    <div id="terms" class="page">
+      <p class="updated">Derniere mise a jour : 19 mars 2026</p>
+
+      <h2>1. Acceptation des conditions</h2>
+      <p>En telechargeant, installant ou utilisant l'application DishRank, vous acceptez d'etre lie par les presentes Conditions Generales d'Utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser l'Application.</p>
+
+      <h2>2. Description du service</h2>
+      <p>DishRank est une application mobile permettant aux utilisateurs de noter et partager des avis sur des plats specifiques dans des restaurants. Le service inclut la publication de photos, notes, commentaires et la decouverte de plats a proximite.</p>
+
+      <h2>3. Inscription et compte</h2>
+      <p>Pour utiliser l'Application, vous devez creer un compte en fournissant une adresse email valide et un mot de passe. Vous etes responsable de la confidentialite de vos identifiants de connexion.</p>
+      <p>Vous devez avoir au moins 16 ans pour creer un compte. En creant un compte, vous certifiez avoir l'age requis.</p>
+
+      <h2>4. Contenu utilisateur</h2>
+      <p>En publiant du contenu (photos, avis, notes) sur DishRank, vous :</p>
+      <ul>
+        <li>Garantissez etre l'auteur original du contenu ou disposer des droits necessaires</li>
+        <li>Accordez a DishRank une licence non exclusive, mondiale et gratuite d'utiliser, afficher et distribuer ce contenu dans le cadre du service</li>
+        <li>Restez proprietaire de vos contenus et pouvez les supprimer a tout moment</li>
+      </ul>
+      <p>Sont interdits les contenus : diffamatoires, injurieux, discriminatoires, a caractere sexuel, violant les droits de tiers, trompeurs ou constituant du spam.</p>
+
+      <h2>5. Comportement des utilisateurs</h2>
+      <ul>
+        <li>Utiliser l'Application de maniere honnete et respectueuse</li>
+        <li>Ne pas publier de faux avis ou notes trompeuses</li>
+        <li>Ne pas harceler ou intimider d'autres utilisateurs</li>
+        <li>Ne pas tenter de contourner les mesures de securite</li>
+        <li>Ne pas utiliser l'Application a des fins commerciales non autorisees</li>
+        <li>Ne pas creer plusieurs comptes dans le but de manipuler les classements</li>
+      </ul>
+
+      <h2>6. Moderation</h2>
+      <p>DishRank se reserve le droit de moderer, modifier ou supprimer tout contenu qui viole les presentes CGU, sans preavis. En cas de violations repetees, votre compte pourra etre suspendu ou supprime.</p>
+
+      <h2>7. Propriete intellectuelle</h2>
+      <p>L'Application DishRank, son design, son code source, ses logos et marques sont la propriete exclusive de DishRank SAS. Toute reproduction, modification ou utilisation non autorisee est strictement interdite.</p>
+
+      <h2>8. Limitation de responsabilite</h2>
+      <p>DishRank fournit le service en l'etat. Nous ne garantissons pas l'exactitude des avis, la disponibilite continue du service, ni l'absence de bugs ou d'erreurs techniques.</p>
+
+      <h2>9. Donnees personnelles</h2>
+      <p>Le traitement de vos donnees personnelles est regi par notre <a href="#privacy" onclick="show('privacy')" style="color:var(--accent)">Politique de Confidentialite</a>.</p>
+
+      <h2>10. Modifications des CGU</h2>
+      <p>DishRank se reserve le droit de modifier les presentes CGU a tout moment. Les utilisateurs seront informes des modifications significatives par notification dans l'Application.</p>
+
+      <h2>11. Resiliation</h2>
+      <p>Vous pouvez supprimer votre compte a tout moment depuis les parametres de l'Application. La suppression entraine l'effacement de toutes vos donnees dans un delai de 30 jours.</p>
+
+      <h2>12. Droit applicable</h2>
+      <p>Les presentes CGU sont regies par le droit francais. En cas de litige, les tribunaux de Paris seront seuls competents.</p>
+
+      <h2>13. Contact</h2>
+      <p>Pour toute question : <a href="mailto:contact@dishrank.app" style="color:var(--accent)">contact@dishrank.app</a></p>
+    </div>
+
+    <a class="cta" href="https://play.google.com/store/apps/details?id=com.dishrank.app">
+      Telecharger DishRank
+    </a>
+
+    <footer>
+      <p>&copy; 2026 DishRank SAS — Paris, France</p>
+    </footer>
+  </div>
+
+  <script>
+    function show(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.querySelector(`nav a[href="#${id}"]`).classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    if (location.hash === '#terms') show('terms');
+  </script>
+</body>
+</html>
